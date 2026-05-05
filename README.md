@@ -1,4 +1,4 @@
-# OJU Tracking
+# Colis Tracking
 
 Application web simple pour le suivi de colis, entièrement statique et autonome.
 
@@ -19,8 +19,8 @@ Application web simple pour le suivi de colis, entièrement statique et autonome
 ### Étapes
 1. Clonez ce dépôt :
    ```bash
-   git clone git@github.com:jonasdossou/OjuTracking.git 
-   cd oju-tracking
+   git clone git@github.com:jonasdossou/colisTracking.git 
+   cd colis-tracking
    ```
 
 2. Installez les dépendances :
