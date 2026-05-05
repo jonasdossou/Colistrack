@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - OJU Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadDashboard()">
+
+    <div
+        style="background-color: blue; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1>OJU Tracking - Dashboard</h1>
+        <p>Gérez vos colis enregistrés et ajoutez de nouveaux suivis pour un suivi facile.</p>
+
+        <h2>Ajouter un nouveau colis</h2>
+        <form id="addForm" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" id="newTracking" placeholder="Numéro de suivi (ex: OJU999999)" required>
+            <input type="text" id="newSender" placeholder="Lieu de départ" required>
+            <input type="text" id="newReceiver" placeholder="Lieu d'arrivée" required>
+            <select id="newStatus">
+                <option value="Déposé">Déposé</option>
+                <option value="En attente">En attente</option>
+                <option value="En transit">En transit</option>
+                <option value="Arrivé">Arrivé</option>
+                <option value="Livré">Livré</option>
+            </select>
+            <button type="submit" style="background-color: rgb(9, 181, 101); color: black;">Ajouter le colis</button>
+        </form>
+
+        <h2>Liste des colis</h2>
+        <div id="dashboard" style="display: flex; flex-wrap: wrap; gap: 10px; padding: 20px; color: black;"></div>
+
+        <!-- <h2>Colis arrivés</h2>
+        <div id="arriveSection" style="display: flex; flex-wrap: wrap; gap: 10px; padding: 20px; color: black;"></div>
+
+        <h2>Colis livrés</h2>
+        <div id="livreSection" style="display: flex; flex-wrap: wrap; gap: 10px; padding: 20px; color: black;"></div> -->
+    </div>
+
+    <!-- <p><a href="index.html" style="color: white; margin-top: 20px;">← Retour à la recherche</a></p> -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>

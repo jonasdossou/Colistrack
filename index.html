@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OJU Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="renderIndexSections()">
+    <div style="background-color: rgb(9, 181, 101); color: black; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="display: flex; flex-direction: row; gap: 200px; justify-content: center; align-items: center;">
+            <h1>Suivi de colis</h1>
+            <div style="background-color: blue; margin: 10px; padding-left: 10px; padding-right: 10px; border-radius: 5px;">
+            <p><a href="dashboard.html" style="color: white; text-decoration: none; font-size: 10px;">Enregistrer un nouveau colis</a></p>
+        </div>
+        </div>
+        
+        <p style="width: 450px;">Suivez vos colis en temps réel avec OJU Tracking. Entrez votre numéro de suivi pour voir l'état actuel de
+            votre livraison.</p>
+        <div>
+            <div class="search-box">
+                <input type="text" id="trackingInput" placeholder="Entrer le numéro de suivi">
+                <button onclick="trackColis()">Rechercher</button>
+            </div>
+            <div id="result" style="color: black;"></div>
+        </div>
+        
+
+        <div style="width: 100%; max-width: 900px; margin-bottom: 20px; color: black; display: flex; flex-direction: row; gap: 200px; justify-content: center; align-items: flex-start;">
+            <div>
+                <h2>Colis arrivés</h2>
+            <div id="arriveHome" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+            </div>
+            <div>
+                <h2>Colis livrés</h2>
+            <div id="livreHome" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
